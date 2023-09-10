@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/Glasses-Website/assets/index-164e548f.css">
   </head>
   <body>
+    
     <header>
     <div class="nav d-flex-spa align-i-c">
         <div class="nav-logo">
@@ -41,7 +42,7 @@
     <div class="intro">
       <h3 class="h3-style">用專業的心，做專業的事</h3>
       <div class="container">
-        <ul class="points d-flex-sb">
+        <ul class="points d-flex-sb" data-aos="flip-up">
           <li>
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true" alt="price">
             <h4>單一價格</h4>
@@ -68,7 +69,7 @@
     <div class="series">
       <h3 class="h3-style">經典系列鏡框</h3>
       <div class="container">
-        <ul class="d-flex-sb">
+        <ul class="d-flex-sb" data-aos="zoom-in">
           <li>
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true" alt="">
             <h4>OPTICAL</h4>
@@ -102,7 +103,7 @@
     <div class="recommenation">
       <div class="container">
         <h3 class="h3-style">顧客推薦</h3>
-        <ul class="d-flex-sb">
+        <ul class="d-flex-sb" data-aos="zoom-out-left">
           <li>
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true" alt="">
             <div class="comment">
@@ -203,5 +204,32 @@
 
 
     
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+    </script>
   </body>
 </html>
